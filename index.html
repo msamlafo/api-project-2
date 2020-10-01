@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merriweather:wght@900&family=Poiret+One&display=swap"
+    rel="stylesheet">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Holiday Planner</title>
+    
+</head>
+
+<body>
+    <!-- HEADER -->
+    <h1>Holidays Around the World</h1>
+
+    <div class="introImage">
+
+        <!-- BACKGROUND IMAGE GOES HERE -->
+        <div class="introOpacity"></div>
+
+    </div>
+    
+    <!-- INTRODUCTION AND FORM SECTION-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- INTRODUCTION -->
+            <div id="introWords" class="col-lg colPadding">
+                <p>Find holidays anywhere around the world</p>
+                <p>There is a total of 320 countries here. Please select a country and the year to view what holidays a
+                    particular
+                    country has. Optionally, in addition to the year selection you can select a month to narrow down your
+                    search to that month.
+                    <p class="haveFun">Have fun!</p>
+                </p>
+            </div>
+
+            <!-- FORM SECTION -->
+            <div id="holidayForm" class=" col-lg colPadding">
+                <form action="">
+                    <div class="form-group m-3 row ">
+                        <label for="country" class="col-sm-2">Country</label>
+                        <select name="country" id="countryCombo" class="col-sm-10 custom-select custom-select-lg mb-3" required>
+                            <option>Select a country</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group row m-3">
+                        <label for="yearsCombo" class="col-sm-2">Year</label>
+                        <select name="yearsCombo" id="yearsCombo" class="col-sm-10 custom-select custom-select-lg mb-3">
+                            <option value="Select a year"></option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group m-3 row">
+                        <label for="month" class="col-sm-2">Month</label>
+                        <select name="month" id="monthCombo" class="col-sm-10 custom-select custom-select-lg mb-3">
+                            <option value="">All</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" id="submitBtn" class="btn btn-primary m-3 btn-block">Check Holiday Calendar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        <!-- FLAG DISPLAY-->
+        <div class="centerDisplay">
+            <a href=""></a><img src="" class="selectedFlag">
+            <!-- STATEMENT SECTION -->
+            <h3 class="statementDisplay">
+            </div>
+            
+            <!-- DISPLAY COUNTRY, MONTH AND YEAR STATEMENT -->
+        </h3>
+        
+        
+    
+        <!-- USING CARDS FOR THE DISPLAY -->
+        <div class="allCardDisplayArea"></div>
+        
+    </div>
+        
+    <!-- LINK TO JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
